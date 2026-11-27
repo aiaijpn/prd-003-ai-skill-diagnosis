@@ -1,0 +1,7 @@
+{
+  "default": "ai-skill",
+  "approved": [
+    "ai-skill",
+    "demo-variant"
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "productId": "demo-variant",
+  "questionVersion": "v1",
+  "copyId": "DEMO01",
+  "brand": {
+    "name": "手順見直しデモ"
+  },
+  "entry": {
+    "title": "手順見直しの3問デモ",
+    "description": "作業手順を振り返り、最初の一歩を見つけます。登録不要。"
+  },
+  "questions": [
+    {
+      "id": "d0",
+      "axis": "document",
+      "label": "手順を書き出しましたか？",
+      "choices": [
+        {
+          "id": "c0",
+          "label": "まだ",
+          "points": 0,
+          "reason": "実施はまだ確認できません。"
+        },
+        {
+          "id": "c1",
+          "label": "一度だけ",
+          "points": 1,
+          "reason": "一度試した経験があります。"
+        },
+        {
+          "id": "c2",
+          "label": "継続している",
+          "points": 2,
+          "reason": "継続する習慣があります。"
+        }
+      ]
+    },
+    {
+      "id": "d1",
+      "axis": "document",
+      "label": "同じ手順を繰り返し使いましたか？",
+      "choices": [
+        {
+          "id": "c0",
+          "label": "まだ",
+          "points": 0,
+          "reason": "実施はまだ確認できません。"
+        },
+        {
+          "id": "c1",
+          "label": "一度だけ",
+          "points": 1,
+          "reason": "一度試した経験があります。"
+        },
+        {
+          "id": "c2",
+          "label": "継続している",
+          "points": 2,
+          "reason": "継続する習慣があります。"
+        }
+      ]
+    },
+    {
+      "id": "d2",
+      "axis": "measure",
+      "label": "作業時間を測りましたか？",
+      "choices": [
+        {
+          "id": "c0",
+          "label": "まだ",
+          "points": 0,
+          "reason": "実施はまだ確認できません。"
+        },
+        {
+          "id": "c1",
+          "label": "一度だけ",
+          "points": 1,
+          "reason": "一度試した経験があります。"
+        },
+        {
+          "id": "c2",
+          "label": "継続している",
+          "points": 2,
+          "reason": "継続する習慣があります。"
+        }
+      ]
+    }
+  ],
+  "scoring": {
+    "axes": [
+      {
+        "id": "document",
+        "label": "手順化",
+        "action": "作業を3手順で書き出す。"
+      },
+      {
+        "id": "measure",
+        "label": "計測",
+        "action": "1回の作業時間を測る。"
+      }
+    ],
+    "tiers": [
+      {
+        "min": 0,
+        "max": 1,
+        "label": "発見",
+        "description": "まずは小さな仕事で使いどころを見つける段階です。"
+      },
+      {
+        "min": 2,
+        "max": 3,
+        "label": "実践",
+        "description": "すでに試している行動を、再現できる習慣へ育てる段階です。"
+      },
+      {
+        "min": 4,
+        "max": 6,
+        "label": "応用",
+        "description": "使い方を測り、ほかの仕事にも応用できる段階です。"
+      }
+    ]
+  },
+  "resultBlocks": [
+    "strength",
+    "growth",
+    "feedback",
+    "cta-top",
+    "action",
+    "cta-bottom"
+  ],
+  "cta": {
+    "label": "LINEで相談する",
+    "url": null
+  }
+}
